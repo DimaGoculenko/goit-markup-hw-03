@@ -161,7 +161,7 @@ button:focus {
 
 
 /* main для portfolio.html*/
-/* button-portfolio */
+/* Filters - кнопки button  */
 .button-portfolio {
     outline: 2px solid red;
 }
@@ -181,9 +181,4 @@ button:focus {
 /* < !-- Section 3 --> */
 .section3-1 {
     outline: 2px solid red;
-}
-
-
-/* кнопки button  */
-.button-portfolio {
 }
