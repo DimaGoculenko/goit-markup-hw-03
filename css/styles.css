@@ -1,0 +1,189 @@
+:root {
+    --primary-text-color: #4D5AE5;
+    --primary-fon-color: #FFFFFF;
+    --color-section-logo: #F4F4FD;
+    --color-body-text: #2E2F42;
+    --color-footer-text: #E7E9FC;
+    --color-mail-tel-p-text: #434455;
+    --color-active: rgba(77, 90, 229, 0.2);
+}
+
+body {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-body-text);
+    background-color: var(--primary-fon-color);
+}
+
+/*  убрал точки и в одну линию (горизонтально) */
+.link,
+.contact-mail,
+.contact-tel,
+.list {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-body-text);
+}
+
+/* hover/:focus/:active */
+a:hover,
+a:focus {
+    color: var(--primary-text-color);
+}
+
+a:active {
+    color: var(--color-active);
+}
+
+
+/* slogan --- p */
+.slogan {
+    color: var(--color-mail-tel-p-text);
+    font-weight: 400;
+}
+
+/* header */
+.header {
+    outline: 2px solid red;
+}
+
+/* логотип */
+.logo-header {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    text-transform: uppercase;
+}
+
+/* цвет логотипа Web */
+span { color: var(--primary-text-color);}
+
+/* ссылки на страницы */
+.nav-href {
+}
+
+/* подсветка текушей страницы */
+.nav-corrent { color: var(--primary-text-color)} 
+
+/* меил и телефон */
+.contact-mail {
+    color: var(--color-mail-tel-p-text);
+    font-weight: 400;
+}
+
+.contact-tel {
+    color: var(--color-mail-tel-p-text);
+    font-weight: 400;
+  /*  сделать тень телефон #000000 */
+}
+
+
+
+/* main для index.html*/
+.section-block {
+    background-color: var(--color-body-text);
+    outline: 2px solid red;
+}
+
+/* заголовок H1 */
+.title {
+    color: var(--primary-fon-color);
+    font-size: 56px;
+    line-height: 60px;
+}
+
+/* кнопка  */
+button {
+    background-color: var(--primary-text-color);
+    color: var(--primary-fon-color);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button:hover,
+button:focus {
+    background-color: var(--primary-fon-color);
+    color: var(--primary-text-color);
+}
+
+.button-main {
+}
+
+/* < !-- Section 1 --> */
+.section1 {
+    outline: 2px solid red;
+}
+
+/* < !-- Section 2 --> */
+.section2 {
+    text-align: center;
+    outline: 2px solid red;
+}
+
+/* text H2 */
+.title-text {
+}
+
+/* < !-- Section 3 --> */
+.section3 {
+    text-align: center;
+    background-color: var(--color-section-logo);
+    outline: 2px solid red;
+}
+
+/* footer */
+.footer {
+    background-color: var(--color-body-text);
+    outline: 2px solid red;
+}
+
+/* логотип */
+.logo-footer {
+    color: var(--color-section-logo);
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    text-transform: uppercase;
+}
+
+.text-footer {
+    color: var(--color-footer-text);
+}
+
+
+
+/* main для portfolio.html*/
+/* button-portfolio */
+.button-portfolio {
+    outline: 2px solid red;
+}
+
+/* < !-- Section 1 --> */
+.section1-1 {
+    outline: 2px solid red;
+}
+
+
+/* < !-- Section 2 --> */
+.section2-1 {
+    outline: 2px solid red;
+}
+
+
+/* < !-- Section 3 --> */
+.section3-1 {
+    outline: 2px solid red;
+}
+
+
+/* кнопки button  */
+.button-portfolio {
+}
