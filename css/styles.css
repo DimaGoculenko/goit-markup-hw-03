@@ -18,18 +18,24 @@ body {
     background-color: var(--primary-fon-color);
 }
 
+* {
+    margin: 0;
+}
+
 /*  убрал точки и в одну линию (горизонтально) */
 .link,
 .contact-mail,
 .contact-tel,
 .list {
     list-style-type: none;
+    display: inline-block;
 }
 
 a {
     text-decoration: none;
     color: var(--color-body-text);
 }
+
 
 /* hover/:focus/:active */
 a:hover,
@@ -53,7 +59,7 @@ a:active {
     outline: 2px solid red;
 }
 
-.container-header {
+.container {
     width: 1128px;
     margin-left: auto;
     margin-right: auto;
@@ -94,14 +100,17 @@ span { color: var(--primary-text-color);}
 /* main для index.html*/
 .section-block {
     background-color: var(--color-body-text);
+    height: 603px;
     outline: 2px solid red;
 }
 
 /* заголовок H1 */
 .title {
     color: var(--primary-fon-color);
+    padding-top: 192px;
     font-size: 56px;
     line-height: 60px;
+    text-align: center;
 }
 
 /* кнопка  */
@@ -119,6 +128,9 @@ button:focus {
 }
 
 .button-main {
+    margin-top: 48px;
+    margin-right: 635px;
+    margin-left: 635px;
 }
 
 /* < !-- Section 1 --> */
@@ -168,6 +180,9 @@ button:focus {
 /* main для portfolio.html*/
 /* Filters - кнопки button  */
 .button-portfolio {
+    margin-top: 96px;
+    margin-right: 427px;
+    margin-left: 427px;
     outline: 2px solid red;
 }
 
