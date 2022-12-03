@@ -41,7 +41,6 @@ a:active {
     color: var(--color-active);
 }
 
-
 /* slogan --- p */
 .slogan {
     color: var(--color-mail-tel-p-text);
@@ -50,7 +49,14 @@ a:active {
 
 /* header */
 .header {
+    background-color: yellow;
     outline: 2px solid red;
+}
+
+.container-header {
+    width: 1128px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* логотип */
@@ -83,7 +89,6 @@ span { color: var(--primary-text-color);}
     font-weight: 400;
   /*  сделать тень телефон #000000 */
 }
-
 
 
 /* main для index.html*/
