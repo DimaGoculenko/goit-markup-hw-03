@@ -20,6 +20,7 @@ body {
 
 * {
     margin: 0;
+    padding: 0;
 }
 
 /*  убрал точки и в одну линию (горизонтально) */
@@ -51,6 +52,8 @@ a:active {
 .slogan {
     color: var(--color-mail-tel-p-text);
     font-weight: 400;
+    line-height: 24px;
+    width: 264px;
 }
 
 /* header */
@@ -72,6 +75,7 @@ a:active {
     font-size: 18px;
     line-height: 1.33;
     text-transform: uppercase;
+    padding-top: 100px;
 }
 
 /* цвет логотипа Web */
@@ -135,11 +139,13 @@ button:focus {
 
 /* < !-- Section 1 --> */
 .section1 {
+    padding-top: 120px;
     outline: 2px solid red;
 }
 
 /* < !-- Section 2 --> */
 .section2 {
+    padding-top: 120px;
     text-align: center;
     outline: 2px solid red;
 }
@@ -152,12 +158,15 @@ button:focus {
 .section3 {
     text-align: center;
     background-color: var(--color-section-logo);
+    height: 732px;
+    padding-top: 120px;
     outline: 2px solid red;
 }
 
 /* footer */
 .footer {
     background-color: var(--color-body-text);
+    height: 310px;
     outline: 2px solid red;
 }
 
@@ -171,8 +180,12 @@ button:focus {
     text-transform: uppercase;
 }
 
+
 .text-footer {
     color: var(--color-footer-text);
+    line-height: 24px;
+    padding-top: 16px;
+    width: 264px;
 }
 
 
@@ -188,17 +201,23 @@ button:focus {
 
 /* < !-- Section 1 --> */
 .section1-1 {
+    margin-top: 72px;
     outline: 2px solid red;
+    background-color: aqua;
 }
 
 
 /* < !-- Section 2 --> */
 .section2-1 {
+    margin-top: 48px;
     outline: 2px solid red;
+    background-color: aqua;
 }
 
 
 /* < !-- Section 3 --> */
 .section3-1 {
+    margin-top: 48px;
     outline: 2px solid red;
+    background-color: aqua;
 }
