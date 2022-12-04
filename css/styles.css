@@ -22,12 +22,15 @@ body {
     margin: 0;
     padding: 0;
 }
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 
 /*  убрал точки и в одну линию (горизонтально) */
-.link,
-.contact-mail,
-.contact-tel,
-.list {
+.link, .list {
     list-style-type: none;
     display: inline-block;
 }
@@ -56,17 +59,23 @@ a:active {
     width: 264px;
 }
 
-/* header */
-.header {
-    background-color: yellow;
-    outline: 2px solid red;
-}
-
 .container {
     width: 1128px;
     margin-left: auto;
     margin-right: auto;
 }
+
+/* header */
+.header {
+    /* height: 72px; */
+}
+
+.nav-contact {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
 
 /* логотип */
 .logo-header {
@@ -75,23 +84,46 @@ a:active {
     font-size: 18px;
     line-height: 1.33;
     text-transform: uppercase;
-    padding-top: 100px;
 }
 
 /* цвет логотипа Web */
 span { color: var(--primary-text-color);}
 
 /* ссылки на страницы */
+.navigation {
+    margin-left: 77px;
+}
+
 .nav-href {
+    display: flex;
+}
+
+.nav-href .link {
+    margin-right: 40px;
+}
+
+.nav-href .link:last-child {
+    margin-right: 0px;
 }
 
 /* подсветка текушей страницы */
 .nav-corrent { color: var(--primary-text-color)} 
 
-/* меил и телефон */
+/* contact меил и телефон */
+.contact {
+    list-style-type: none;
+    display: flex;
+}
+
+.contact, li:last-child {
+    margin-right: 0px;
+}
+
 .contact-mail {
     color: var(--color-mail-tel-p-text);
     font-weight: 400;
+    margin-right: 40px;
+    margin-left: 331px;
 }
 
 .contact-tel {
@@ -105,7 +137,6 @@ span { color: var(--primary-text-color);}
 .section-block {
     background-color: var(--color-body-text);
     height: 603px;
-    outline: 2px solid red;
 }
 
 /* заголовок H1 */
@@ -135,19 +166,22 @@ button:focus {
     margin-top: 48px;
     margin-right: 635px;
     margin-left: 635px;
+    width: 170px;
+    height: 51px;
 }
 
 /* < !-- Section 1 --> */
 .section1 {
     padding-top: 120px;
-    outline: 2px solid red;
+    display: flex;
+    background-color: goldenrod;
 }
 
 /* < !-- Section 2 --> */
 .section2 {
     padding-top: 120px;
     text-align: center;
-    outline: 2px solid red;
+    background-color: aquamarine;
 }
 
 /* text H2 */
@@ -160,14 +194,12 @@ button:focus {
     background-color: var(--color-section-logo);
     height: 732px;
     padding-top: 120px;
-    outline: 2px solid red;
 }
 
 /* footer */
 .footer {
     background-color: var(--color-body-text);
     height: 310px;
-    outline: 2px solid red;
 }
 
 /* логотип */
@@ -178,6 +210,8 @@ button:focus {
     font-size: 18px;
     line-height: 1.33;
     text-transform: uppercase;
+    display: flex;
+    padding-top: 100px;
 }
 
 
@@ -196,7 +230,12 @@ button:focus {
     margin-top: 96px;
     margin-right: 427px;
     margin-left: 427px;
+    height: 48px;
+    width: 586px;
     outline: 2px solid red;
+    display: flex;
+    align-items: center;
+
 }
 
 /* < !-- Section 1 --> */
