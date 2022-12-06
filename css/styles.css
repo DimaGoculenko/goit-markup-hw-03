@@ -55,7 +55,6 @@ a:active {
 
 /* header */
 .header {
-    /* display: flex; */
     border-bottom: 0.5px outset var(--color-border);
 }
 
@@ -160,16 +159,17 @@ button:focus {
     margin-top: 120px;
 }
 
-    .feature-list {
+.feature-list {
     list-style-type: none;
     display: inline-block;
-    padding-right: 24px;
-    width: 279px;
-    height: 72px;
+    margin-right: 24px;
+    width: 264px;
+    height: 24px;
     }
 
-    .feature-list:last-child {
-        padding-right: 0;
+.feature-list:last-child {
+    padding-right: 0;
+    margin-right: 0;
     }
 
 /* slogan --- p */
@@ -177,25 +177,30 @@ button:focus {
     color: var(--color-mail-tel-p-text);
     font-weight: 400;
     line-height: 24px;
-    margin-top: 8px; 
+    margin-top: 8px;
     }
 
 
 /* < !-- Section 2 --> */
 .section2 {
     margin-top: 120px;
-    text-align: center;
-    background-color: rgb(193, 22, 139);
 }
 
-.link-section2 {
+ul, .link-section2 {
     list-style-type: none;
     display: inline-flex;
+    padding-right: 24px;
+}
+
+.link-section2 :last-child {
+    margin-right: 0;
+
 }
 
 /* text H2 */
 .title-text-2 {
     padding-bottom: 72px;
+    text-align: center;
 }
 
 /* < !-- Section 3 --> */
@@ -270,7 +275,6 @@ button:focus {
 
 .link-portfolio {
     margin-right: 24px;
-    /* text-align: center; */
 }
 
 /* < !-- Section --> */
