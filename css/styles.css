@@ -152,6 +152,7 @@ button:focus {
     margin-left: 635px;
     width: 170px;
     height: 51px;
+    border-radius: 4px;
 }
 
 /* < !-- Section 1 --> */
@@ -267,15 +268,18 @@ ul, .link-section2 {
     margin-left: 427px;
     height: 48px;
     width: 586px;
-    /* list-style-type: none; */
-    /* text-align: center; */
-    
 }
 
 .portfolio-link {
     margin-left: 24px;
     display: flex;
-    outline: 2px solid red;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    background-color: var(--color-section-logo);
+    border: 1px solid var(--color-footer-text);
+    border-radius: 4px;
 }
 
 /* < !-- Section --> */
