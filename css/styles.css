@@ -38,14 +38,6 @@ body {
     margin-left: auto;
 }
 
-
-/*  убрал точки и в одну линию (горизонтально) */
-.list {
-    list-style-type: none;
-    display: inline-block;
-    border: 0.5px outset var(--color-border);
-}
-
 a {
     text-decoration: none;
     color: var(--color-body-text);
@@ -166,25 +158,34 @@ button:focus {
 /* < !-- Section 1 --> */
 .section1 {
     margin-top: 120px;
-    display: flex;
-    background-color: rgb(236, 241, 96);
 }
+
+    .feature-list {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 24px;
+    width: 279px;
+    height: 72px;
+    }
+
+    .feature-list:last-child {
+        padding-right: 0;
+    }
 
 /* slogan --- p */
 .slogan-section1 {
     color: var(--color-mail-tel-p-text);
     font-weight: 400;
     line-height: 24px;
-    width: 264px;
-    /* margin-right: 24px; */
-    background-color: rgb(39, 194, 160);
-}
+    margin-top: 8px; 
+    }
+
 
 /* < !-- Section 2 --> */
 .section2 {
     margin-top: 120px;
     text-align: center;
-    background-color: rgb(41, 185, 77);
+    background-color: rgb(193, 22, 139);
 }
 
 .link-section2 {
@@ -276,11 +277,14 @@ button:focus {
 .flex-container {
     display: flex;
 }
+
 .flex-container, .list {
     width: 360px;
     height: 420px;
     margin-right: 24px;
     margin-bottom: 48px;
+    list-style-type: none;
+    border: 0.5px outset var(--color-border);
 }
 
 .flex-container:nth-last-child(3n + 1) {
