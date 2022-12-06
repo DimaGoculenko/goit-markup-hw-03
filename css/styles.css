@@ -6,6 +6,7 @@
     --color-footer-text: #E7E9FC;
     --color-mail-tel-p-text: #434455;
     --color-active: rgba(77, 90, 229, 0.2);
+    --color-border: #F4F4FD;
 }
 
 body {
@@ -22,24 +23,33 @@ body {
     margin: 0;
     padding: 0;
 }
+
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
+.container {
+    width: 1158px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 
 /*  убрал точки и в одну линию (горизонтально) */
-.link, .list {
+.list {
     list-style-type: none;
     display: inline-block;
+    border: 0.5px outset var(--color-border);
 }
 
 a {
     text-decoration: none;
     color: var(--color-body-text);
 }
-
 
 /* hover/:focus/:active */
 a:hover,
@@ -51,23 +61,10 @@ a:active {
     color: var(--color-active);
 }
 
-/* slogan --- p */
-.slogan {
-    color: var(--color-mail-tel-p-text);
-    font-weight: 400;
-    line-height: 24px;
-    width: 264px;
-}
-
-.container {
-    width: 1128px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 /* header */
 .header {
-    /* height: 72px; */
+    /* display: flex; */
+    border-bottom: 0.5px outset var(--color-border);
 }
 
 .nav-contact {
@@ -76,7 +73,6 @@ a:active {
     padding-bottom: 24px;
 }
 
-
 /* логотип */
 .logo-header {
     font-family: 'Raleway';
@@ -84,25 +80,27 @@ a:active {
     font-size: 18px;
     line-height: 1.33;
     text-transform: uppercase;
+    margin-right: 77px;
 }
 
 /* цвет логотипа Web */
-span { color: var(--primary-text-color);}
-
-/* ссылки на страницы */
-.navigation {
-    margin-left: 77px;
+span {
+    color: var(--primary-text-color);
 }
 
+/* ссылки на страницы */
 .nav-href {
+    display: flex;
+    margin-right: auto; 
+}
+
+.navigation, .link {
+    list-style-type: none;
+    margin-right: 40px;
     display: flex;
 }
 
-.nav-href .link {
-    margin-right: 40px;
-}
-
-.nav-href .link:last-child {
+li :last-child {
     margin-right: 0px;
 }
 
@@ -115,15 +113,10 @@ span { color: var(--primary-text-color);}
     display: flex;
 }
 
-.contact, li:last-child {
-    margin-right: 0px;
-}
-
 .contact-mail {
     color: var(--color-mail-tel-p-text);
     font-weight: 400;
     margin-right: 40px;
-    margin-left: 331px;
 }
 
 .contact-tel {
@@ -172,20 +165,36 @@ button:focus {
 
 /* < !-- Section 1 --> */
 .section1 {
-    padding-top: 120px;
+    margin-top: 120px;
     display: flex;
-    background-color: goldenrod;
+    background-color: rgb(236, 241, 96);
+}
+
+/* slogan --- p */
+.slogan-section1 {
+    color: var(--color-mail-tel-p-text);
+    font-weight: 400;
+    line-height: 24px;
+    width: 264px;
+    /* margin-right: 24px; */
+    background-color: rgb(39, 194, 160);
 }
 
 /* < !-- Section 2 --> */
 .section2 {
-    padding-top: 120px;
+    margin-top: 120px;
     text-align: center;
-    background-color: aquamarine;
+    background-color: rgb(41, 185, 77);
+}
+
+.link-section2 {
+    list-style-type: none;
+    display: inline-flex;
 }
 
 /* text H2 */
-.title-text {
+.title-text-2 {
+    padding-bottom: 72px;
 }
 
 /* < !-- Section 3 --> */
@@ -193,8 +202,30 @@ button:focus {
     text-align: center;
     background-color: var(--color-section-logo);
     height: 732px;
-    padding-top: 120px;
+    margin-top: 120px;
 }
+
+/* text H2 */
+.title-text-3 {
+    padding-top: 120px;
+    padding-bottom: 72px;
+}
+
+.slogan-section3 {
+    color: var(--color-mail-tel-p-text);
+    font-weight: 400;
+    line-height: 24px;
+    width: 264px;
+}
+
+.list-photo {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 24px;
+    border: 0.5px outset var(--color-border);
+    background-color: var(--primary-fon-color);
+}
+
 
 /* footer */
 .footer {
@@ -210,10 +241,9 @@ button:focus {
     font-size: 18px;
     line-height: 1.33;
     text-transform: uppercase;
-    display: flex;
-    padding-top: 100px;
+    display: inline-block;
+    margin-top: 100px;
 }
-
 
 .text-footer {
     color: var(--color-footer-text);
@@ -223,40 +253,48 @@ button:focus {
 }
 
 
-
 /* main для portfolio.html*/
 /* Filters - кнопки button  */
 .button-portfolio {
     margin-top: 96px;
     margin-right: 427px;
+    margin-bottom: 72px;
     margin-left: 427px;
     height: 48px;
     width: 586px;
-    outline: 2px solid red;
     display: flex;
-    align-items: center;
+    list-style-type: none;
+    outline: 2px solid red;
+}
 
+.link-portfolio {
+    margin-right: 24px;
+    /* text-align: center; */
+}
+
+/* < !-- Section --> */
+.flex-container {
+    display: flex;
+}
+.flex-container, .list {
+    width: 360px;
+    height: 420px;
+    margin-right: 24px;
+    margin-bottom: 48px;
+}
+
+.flex-container:nth-last-child(3n + 1) {
+    margin-bottom: 120px;
+    padding-bottom: 0;
 }
 
 /* < !-- Section 1 --> */
-.section1-1 {
-    margin-top: 72px;
-    outline: 2px solid red;
-    background-color: aqua;
-}
-
-
 /* < !-- Section 2 --> */
-.section2-1 {
-    margin-top: 48px;
-    outline: 2px solid red;
-    background-color: aqua;
-}
-
-
 /* < !-- Section 3 --> */
-.section3-1 {
-    margin-top: 48px;
-    outline: 2px solid red;
-    background-color: aqua;
+
+/* slogan --- p */
+.slogan {
+    color: var(--color-mail-tel-p-text);
+    font-weight: 400;
+    line-height: 24px;
 }
