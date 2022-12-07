@@ -129,6 +129,7 @@ li:last-child {
     font-size: 56px;
     line-height: 60px;
     text-align: center;
+    margin-bottom: 48px;
 }
 
 /* кнопка  */
@@ -147,7 +148,7 @@ button:focus {
 
 .button-main {
     display: block;
-    margin-top: 48px;
+    /* margin-top: 48px; */
     margin-right: auto;
     margin-left: auto;
     width: 170px;
