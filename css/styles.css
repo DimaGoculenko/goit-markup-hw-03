@@ -298,21 +298,25 @@ li .portfolio-link {
 
 /* < !-- Section --> */
 .flex-container {
-    display: inline-block;
+    display: flex;
     flex-wrap: wrap;
+    justify-content:space-between;
     background-color: chartreuse;
+    margin-bottom: 120px;
+    
 }
 
 .flex-container, .list {
-    margin-right: 24px;
     margin-bottom: 48px;
     list-style-type: none;
     border: 0.5px outset var(--color-border);
 }
 
 .flex-container:nth-last-child(3n + 1) {
-    margin-bottom: 120px;
-    padding-bottom: 0;
+    /* margin-bottom: 0;
+    padding-bottom: 0; */
+
+    
 }
 
 /* H3 ---- subtitle */
