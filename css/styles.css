@@ -167,6 +167,7 @@ button:focus {
     display: inline-block;
     margin-right: 24px;
     height: 104px;
+    width: 264px;
 }
 
 .feature-list:last-child {
@@ -198,6 +199,7 @@ button:focus {
 .title-text-2 {
     margin-bottom: 72px;
     text-align: center;
+    font-weight: 600;
 }
 
 /* < !-- Section 3 --> */
@@ -211,6 +213,7 @@ button:focus {
 /* text H2 */
 .title-text-3 {
     margin-bottom: 72px;
+    font-weight: 600;
 }
 
 .list-photo {
@@ -226,9 +229,13 @@ button:focus {
     margin-right: 0;
 }
 
+.name-slogan {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 /* H3 -- name */
 .name {
-    margin-top: 32px;
     margin-bottom: 8px;
 }
 
@@ -237,7 +244,6 @@ button:focus {
     font-weight: 400;
     line-height: 24px;
     width: 264px;
-    margin-bottom: 32px;
 }
 
 /*-------------footer------------*/
@@ -268,32 +274,36 @@ button:focus {
 
 /*--------main для portfolio.html----------*/
 /* Filters - кнопки button  */
-.button-portfolio {
-    margin: 96px 427px 72px 427px;
-    height: 48px;
-    width: 586px;
+.button-filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+    margin-top: 96px;
+    /* padding-top: 96px; */
+    /* padding-bottom: 72px; */
 }
 
 .portfolio-link {
-    margin-left: 15px;
-    display: inline;
-    padding-top: 12px;
-    padding-right: 24px;
-    padding-bottom: 12px;
-    padding-left: 24px;
+    margin-left: 24px;
     border: 1px solid var(--color-footer-text);
     border-radius: 4px;
 }
 
+li .portfolio-link {
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+}
 
 /* < !-- Section --> */
 .flex-container {
-    display: flex;
+    display: inline-block;
+    flex-wrap: wrap;
+    background-color: chartreuse;
 }
 
 .flex-container, .list {
-    width: 360px;
-    height: 420px;
     margin-right: 24px;
     margin-bottom: 48px;
     list-style-type: none;
