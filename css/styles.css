@@ -112,7 +112,6 @@ li:last-child {
 .contact-tel {
     color: var(--color-mail-tel-p-text);
     font-weight: 400;
-  /*  сделать тень телефон #000000 */
 }
 
 
@@ -122,6 +121,7 @@ li:last-child {
     padding-top: 192px;
     padding-bottom: 192px;
     /* background-image: linear-gradient(blue, yellow); */
+    /* background-image: url(../images/people-office\ 1.jpg); */
 }
 
 /* заголовок H1 */
@@ -287,6 +287,7 @@ button:focus {
 .portfolio-link {
     border: 1px solid var(--color-footer-text);
     border-radius: 4px;
+    /* margin-left: 24px; */
 }
 
 li .portfolio-link {
@@ -294,7 +295,10 @@ li .portfolio-link {
     padding-right: 24px;
     padding-bottom: 12px;
     padding-left: 24px;
-    margin-left: 24px;
+}
+
+.li-button {
+    margin-right: 24px;
 }
 
 /* < !-- Section --> */
