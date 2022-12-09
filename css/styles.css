@@ -121,6 +121,7 @@ li:last-child {
     background-color: var(--color-body-text);
     padding-top: 192px;
     padding-bottom: 192px;
+    /* background-image: linear-gradient(blue, yellow); */
 }
 
 /* заголовок H1 */
@@ -200,6 +201,7 @@ button:focus {
     margin-bottom: 72px;
     text-align: center;
     font-weight: 600;
+    font-size: 36px;
 }
 
 /* < !-- Section 3 --> */
@@ -213,6 +215,7 @@ button:focus {
 /* text H2 */
 .title-text-3 {
     margin-bottom: 72px;
+    font-size: 36px;
     font-weight: 600;
 }
 
